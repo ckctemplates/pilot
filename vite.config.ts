@@ -5,7 +5,7 @@ import tailwindcss from "@tailwindcss/vite";
 import { fileURLToPath } from "node:url";
 import type { Plugin } from "vite";
 import { defineConfig } from "vite";
-// Client-only heavy modules replaced with a stub in the SSR build. The
+// Client-only gheavy modules replaced with a stub in the SSR build. The
 // worker bundle inlines all dynamic imports, so React.lazy alone cannot
 // keep them out of the server file — react-player's media stack (hls.js,
 // dashjs, media-chrome, Mux/Vimeo) is ~3MB of cold-start parse cost that
